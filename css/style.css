@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #A19E9E;
+    --secondary-color: #ffffff;
+    --secondary-bg: #F8F8F8;
+    --para-color: ;
+    --heading-color: #00BFFF;
+    --btn-color: #89CFF0;
+    --btn-hover-color: #98FB98;
+    --secondary-text: #D3D3D3;
+    --font-family: "Roboto", sans-serif;
+    --primary-para: #808080;
+    --hover-icons: #50C878;
+}
+
+/* header */
+header {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        justify-content: center;
+        text-align: right;
+        align-items: center;
+        background: #A19E9E;
+
+
+        ul {
+
+
+            li {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+
+                :hover {
+                    background-color: white;
+                }
+
+                a {
+
+                    color: black !important;
+                }
+
+            }
+        }
+    }
+}
+
+nav .navbar-brand {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+header .row {
+    margin: 0;
+    padding: 0;
+}
+
+header.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header #header_img img {
+    height: 600px;
+    width: 1000px;
+    object-fit: cover;
+}
+
+#navresponsive {
+    display: none;
+}
+
+#kushiyamanao .btn {
+
+    height: 45px;
+    width: 120px;
+    background-color: var(--btn-color);
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-family);
+
+}
+
+#kushiyamanao .btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+#Programmes h1 {
+    font-family: var(--font-family);
+    color: var(--heading-color);
+}
+
+#kushiyamanao h1 {
+    font-family: var(--font-family);
+    color: var(--heading-color);
+}
+
+#blood_donation h1 {
+    font-family: var(--font-family);
+    color: var(--heading-color);
+}
+
+#Programmes p {
+    font-family: var(--font-family);
+}
+
+#kushiyamanao p {
+    font-family: var(--font-family);
+}
+
+#blood_donation p {
+    font-family: var(--font-family);
+}
+
+#blood_donation .btn {
+
+    height: 45px;
+    width: 120px;
+    background-color: var(--btn-color);
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-family);
+
+}
+
+#blood_donation .btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+#Programmes .btn {
+
+    height: 45px;
+    width: 120px;
+    background-color: var(--btn-color);
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-family);
+
+}
+
+#Programmes .btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+
+/* program_img */
+#program_img_2 {
+    transform: translateX(-28%);
+}
+
+#program_img img {
+    width: 500px;
+    height: 340px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* kushiyamanao_img */
+
+#kushiyamanao_img_1 {
+    width: 560px;
+    height: 255px;
+    object-fit: cover;
+    background-position: cover;
+
+}
+
+#kushiyamanao_img_2 {
+    width: 560px;
+    height: 370px;
+    object-fit: cover;
+    background-position: cover;
+
+}
+
+/* blood_donation */
+
+#blood_donation img {
+    width: 560px;
+    height: 620px;
+    object-fit: cover;
+    background-position: center;
+
+
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+    header .navbar {
+        display: none;
+    }
+
+    #navresponsive {
+        display: block;
+    }
+
+    #navresponsive .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 25px;
+        padding-right: 30px;
+
+
+    }
+
+    #navresponsive .navbar-brand span {
+        padding-bottom: 24px;
+    }
+
+    #navresponsive .navbar-brand img {
+        max-width: 150px;
+        max-height: 60px;
+    }
+
+    #navresponsive .navbar-toggler {
+        color: var(--primary-color) !important;
+        border: none !important;
+        padding-right: 30px;
+    }
+
+    #navresponsive .navbar-toggler-icon {
+        width: 50px;
+        height: 45px;
+    }
+
+    #navresponsive ul {
+        padding-right: 20px;
+    }
+
+
+
+
+
+
+}
+
+
+/* <!-- <footer></footer> --> */
+
+#footer #footer_icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+#footer {
+    background-color: var(--primary-color);
+}
+
+#footer #footer_icons .border_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-size: 18px;
+}
+
+#footer .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#footer .contact h6 {
+    line-height: 30px;
+}
+
+
+@media screen and (max-width:992px) {
+
+    /* program_img */
+    #program_img_2 {
+        transform: translateX(0%);
+    }
+
+    #program_img {
+        text-align: center;
+    }
+
+    /* kushiyamanao_img */
+
+    #kushiyamanao_img_1 {
+        width: 560px;
+        height: 255px;
+        object-fit: cover;
+        background-position: cover;
+
+    }
+
+    #kushiyamanao_img {
+        text-align: center;
+    }
+
+    /* blood_donation */
+
+    #blood_donation_img {
+        text-align: center;
+
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width:576px) {
+    #navresponsive .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        padding-right: 30px;
+
+
+    }
+
+    #navresponsive .navbar-brand span {
+        padding-bottom: 24px;
+        font-size: 17px;
+        letter-spacing: 0;
+    }
+
+    #navresponsive .navbar-brand img {
+        max-width: 130px;
+        max-height: 60px;
+    }
+
+    #navresponsive .navbar-toggler {
+        color: var(--primary-color) !important;
+        border: none !important;
+        /* padding-right: 25px; */
+    }
+
+    #navresponsive .navbar-toggler-icon {
+        max-width: 40px;
+        max-height: 35px;
+    }
+
+    #navresponsive ul {
+        /* padding-right: 13px; */
+    }
+
+
+
+
+}
+
+@media screen and (max-width:380px) {
+    #navresponsive .navbar-brand span {
+        display: none;
+    }
+
+    #navresponsive .navbar-brand img {
+        max-width: 130px;
+        max-height: 60px;
+        margin-right: 20px;
+    }
+
+
+
+}
