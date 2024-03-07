@@ -7,11 +7,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color: #A19E9E;
+    --primary-color: #98aa9b;
     --secondary-color: #ffffff;
     --secondary-bg: #F8F8F8;
-    --para-color: ;
-    --heading-color: #00BFFF;
+    --smallheadings-color: #f98100;
+    --heading-color: #170e80;
     --btn-color: #89CFF0;
     --btn-hover-color: #98FB98;
     --secondary-text: #D3D3D3;
@@ -25,7 +25,7 @@ header {
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-bg);
 
     nav {
         display: flex;
@@ -34,7 +34,7 @@ header {
         justify-content: center;
         text-align: right;
         align-items: center;
-        background: #A19E9E;
+        background: var(--secondary-bg);
 
 
         ul {
@@ -64,7 +64,8 @@ nav .navbar-brand {
     margin: auto;
     font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 25px;
+    color: var(--smallheadings-color);
 }
 
 header .row {
@@ -79,9 +80,10 @@ header.container-fluid {
 }
 
 header #header_img img {
-    height: 600px;
+    height: 615px;
     width: 1000px;
     object-fit: cover;
+    background-position: center;
 }
 
 #navresponsive {
@@ -90,13 +92,13 @@ header #header_img img {
 
 #kushiyamanao .btn {
 
-    height: 45px;
-    width: 120px;
-    background-color: var(--btn-color);
+    height: 55px;
+    width: 135px;
     color: black;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--font-family);
+    border: 3px solid black;
 
 }
 
@@ -107,39 +109,64 @@ header #header_img img {
 #Programmes h1 {
     font-family: var(--font-family);
     color: var(--heading-color);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
 }
 
 #kushiyamanao h1 {
     font-family: var(--font-family);
     color: var(--heading-color);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+
 }
 
 #blood_donation h1 {
     font-family: var(--font-family);
     color: var(--heading-color);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+
 }
 
 #Programmes p {
     font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 #kushiyamanao p {
     font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 #blood_donation p {
     font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 #blood_donation .btn {
 
-    height: 45px;
-    width: 120px;
-    background-color: var(--btn-color);
+
+    height: 55px;
+    width: 135px;
     color: black;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--font-family);
+    border: 3px solid black;
+
 
 }
 
@@ -149,13 +176,14 @@ header #header_img img {
 
 #Programmes .btn {
 
-    height: 45px;
-    width: 120px;
-    background-color: var(--btn-color);
+    height: 55px;
+    width: 135px;
     color: black;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--font-family);
+    border: 3px solid black;
+
 
 }
 
@@ -175,6 +203,7 @@ header #header_img img {
     object-fit: cover;
     background-position: center;
     background-size: cover;
+    border-radius: 20px;
 
 }
 
@@ -185,10 +214,12 @@ header #header_img img {
     height: 255px;
     object-fit: cover;
     background-position: cover;
+    border-radius: 10px;
 
 }
 
 #kushiyamanao_img_2 {
+    border-radius: 10px;
     width: 560px;
     height: 370px;
     object-fit: cover;
@@ -272,8 +303,10 @@ header #header_img img {
 
 }
 
-#footer {
-    background-color: var(--primary-color);
+#footer #footer_icons .icon_content {
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: #aaa;
 }
 
 #footer #footer_icons .border_footer {
@@ -282,6 +315,13 @@ header #header_img img {
     justify-content: space-between;
     width: 200px;
     font-size: 18px;
+
+}
+
+#footer .navbar-brand {
+    color: var(--smallheadings-color);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #footer .contact {
@@ -296,6 +336,37 @@ header #header_img img {
 #footer .contact h6 {
     line-height: 30px;
 }
+
+#footer .contact h6 span {
+    color: var(--smallheadings-color);
+    font-size: 25px;
+}
+
+#footer {
+    margin-top: 30px;
+    background-color: #808080;
+    color: var(--secondary-color);
+}
+
+#footer i:hover {
+    color: var(--smallheadings-color);
+    cursor: pointer;
+
+}
+
+#footer i {
+    font-size: 19px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 @media screen and (max-width:992px) {
